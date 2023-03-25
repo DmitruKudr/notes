@@ -7,7 +7,8 @@ const NoteCard: FC<{note: Note, onNoteEdit: (note: Note) => void, onNoteDelete: 
     const [tags, setTags] = useState<string[]>(note.tags);
 
     useEffect(() => {
-        onNoteEdit({...note, title, text, tags})
+        onNoteEdit({...note, title, text, tags});
+        // eslint-disable-next-line
     }, [tags])
 
     const saveTags = () => {

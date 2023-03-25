@@ -29,15 +29,15 @@ const App: FC = () => {
   }, [filterTags, notes]);
 
   const checkFilter = (tag: string) => {
-      filterTags.includes(tag) ? setFilterTags(filterTags.filter(item => item != tag)) : setFilterTags([...filterTags, tag]);
+      filterTags.includes(tag) ? setFilterTags(filterTags.filter(item => item !== tag)) : setFilterTags([...filterTags, tag]);
   }
 
   const onNoteEdit = (currentNote: Note) => {
-      setNotes(notes.map(note => note.id == currentNote.id ? currentNote : note));
+      setNotes(notes.map(note => note.id === currentNote.id ? currentNote : note));
   }
 
   const onNoteDelete = (id: number) => {
-      setNotes(notes.filter(note => note.id != id))
+      setNotes(notes.filter(note => note.id !== id))
   }
 
   return (
@@ -58,7 +58,7 @@ const App: FC = () => {
               <button 
                 className='hashtag-button'
                 value={tag}
-                onClick={e => setTags(tags.filter(tag => tag != e.currentTarget.value))}  
+                onClick={e => setTags(tags.filter(tag => tag !== e.currentTarget.value))}  
               >
                 <i className="fa-solid fa-xmark fa-lg"/>
               </button>

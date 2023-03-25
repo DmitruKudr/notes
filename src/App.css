@@ -1,0 +1,161 @@
+.App {
+  width: 100%;
+  height: 100%; }
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; }
+
+.note-card {
+  width: 300px;
+  background: white;
+  color: #2c3231;
+  padding: 20px;
+  border-radius: 4px; }
+
+.note-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #2c3231; }
+
+.note-title {
+  border: none;
+  outline: none;
+  color: #2c3231;
+  font-size: 20px;
+  background: none;
+  cursor: pointer; }
+
+.note-textfield-wrapper {
+  position: relative;
+  width: 100%; }
+
+.note-text {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 5px;
+  pointer-events: none;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #8b8b93; }
+
+.note-textfield {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  color: transparent;
+  caret-color: #2c3231;
+  resize: none;
+  overflow: hidden; }
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-top: 1px solid #8b8b93;
+  padding-top: 5px; }
+
+.hashtag {
+  color: white;
+  background: teal;
+  opacity: 0.7;
+  border-radius: 2px;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+.checkbox {
+  display: none; }
+  .checkbox:checked + label {
+    background: teal;
+    transition: all .3s ease-in-out; }
+
+.hashtag-label, .input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #8b8b93;
+  color: #f2f7f6;
+  transition: all .3s ease-in-out; }
+  .hashtag-label:hover, .input-wrapper:hover {
+    background: #383839;
+    transition: all .3s ease-in-out; }
+
+.hashtag-button, .input-button {
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 10px;
+  color: #f2f7f6;
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+  .hashtag-button:hover, .input-button:hover {
+    color: #fa7c69;
+    transition: all .3s ease-in-out; }
+
+.input-button:hover {
+  color: #67d470;
+  transition: all .3s ease-in-out; }
+
+.hashtag-list {
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; }
+
+.input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #f2f7f6;
+  border-bottom: 2px solid #f2f7f6; }
+
+.input::placeholder {
+  color: #b3bdba; }
+
+.save-button, .delete-button {
+  color: #2c3231;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all .3s ease-in-out; }
+  .save-button:hover, .delete-button:hover {
+    color: #fa7c69;
+    transition: all .3s ease-in-out; }
+
+.save-button:hover {
+  color: #5290cd;
+  transition: all .3s ease-in-out; }
+
+.add-newcard {
+  border: none;
+  outline: none;
+  width: 300px;
+  min-height: 250px;
+  background: white;
+  border-radius: 4px;
+  font-size: 50px;
+  color: #8b8b93;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .add-newcard:hover {
+    color: #67d470;
+    transition: all .3s ease-in-out; }
+
+/*# sourceMappingURL=App.css.map */

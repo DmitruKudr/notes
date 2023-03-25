@@ -1,0 +1,16 @@
+{
+    "notes": [
+        {"id": 1, "title": "note1", "text": "text1 contains #tag1, #tag2 and #tag3", "tags": [
+            "#tag1", "#tag2", "#tag3"
+        ]},
+        {"id": 2, "title": "note2", "text": "text2 contains #tag1, and #tag4", "tags": [
+            "#tag1", "#tag4"
+        ]},
+        {"id": 3, "title": "note3", "text": "text3 contains #tag2, #tag3 and #tag5", "tags": [
+            "#tag2", "#tag3", "#tag5"
+        ]}
+    ],
+    "tags": [
+        "#tag1", "#tag2", "#tag3", "#tag4", "#tag5"
+    ]
+}

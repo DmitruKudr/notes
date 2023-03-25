@@ -1,0 +1,194 @@
+$color1: #f2f7f6;
+$color2: #b3bdba;
+$color3: #8b8b93;
+$color4: #383839;
+$textColor: #2c3231;
+
+.App {
+    width: 100%;
+    height: 100%;
+}
+
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.note-card {
+    width: 300px;
+    background: white;
+    color: $textColor;
+    padding: 20px;
+    border-radius: 4px;
+}
+.note-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $textColor;
+}
+.note-title {
+    border: none;
+    outline: none;
+    color: $textColor;
+    font-size: 20px;
+    background: none;
+
+    cursor: pointer;
+}
+.note-textfield-wrapper {
+    position: relative;
+    width: 100%;
+}
+.note-text {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-top: 5px;
+
+    pointer-events: none;
+    font-size: 16px;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: $color3;
+}
+.note-textfield {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    margin-top: 5px;
+    
+    border: none;
+    outline: none;
+    background: none;
+
+    color: transparent;
+    caret-color: $textColor;
+
+    resize: none;
+    overflow: hidden;
+}
+.note-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-top: 1px solid $color3;
+    padding-top: 5px;
+}
+
+.hashtag {
+    color: white;
+    background: teal;
+    opacity: 0.7;
+    border-radius: 2px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    display: none;
+
+    &:checked + label {
+        background: teal;
+        transition: all .3s ease-in-out;
+    }
+}
+
+.hashtag-label, .input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: $color3;
+    color: $color1;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: $color4;
+        transition: all .3s ease-in-out;
+    }
+}
+
+.hashtag-button, .input-button {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10px;
+    color: $color1;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(250, 124, 105);
+        transition: all .3s ease-in-out;
+    }
+}
+
+.input-button:hover {
+    color: rgb(103, 212, 112);
+    transition: all .3s ease-in-out;
+}
+
+.hashtag-list {
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    color: $color1;
+
+    border-bottom: 2px solid $color1;
+}
+.input::placeholder {
+    color: $color2;
+}
+
+.save-button, .delete-button {
+    color: $textColor;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    background: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: rgb(250, 124, 105);
+        transition: all .3s ease-in-out;
+    }
+}
+.save-button:hover {
+    color: rgb(82, 144, 205);
+    transition: all .3s ease-in-out;
+}
+
+.add-newcard {
+    border: none;
+    outline: none;
+    width: 300px;
+    min-height: 250px;
+    background: white;
+    border-radius: 4px;
+    font-size: 50px;
+    color: $color3;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color:rgb(103, 212, 112);
+        transition: all .3s ease-in-out;
+    }
+}
